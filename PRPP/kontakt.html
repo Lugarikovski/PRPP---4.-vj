@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Tehničko veleučilište u Zagrebu</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Tehničko veleučilište u Zagrebu</h1>
+        <nav>
+            <ul>
+                <li><a href="PRPP.html">Početna</a></li>
+                <li><a href="novosti.html">Novosti</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Kontakt</h2>
+            <form action="send_message.php" method="post">
+                <label for="name">Ime i prezime:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email adresa:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Poruka:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Pošalji</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tehničko veleučilište u Zagrebu. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>

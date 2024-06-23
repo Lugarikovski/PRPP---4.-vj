@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehničko veleučilište u Zagrebu</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Tehničko veleučilište u Zagrebu</h1>
+        <nav>
+            <ul>
+                <li><a href="PRPP.html">Početna</a></li>
+                <li><a href="novosti.html">Novosti</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Dobrodošli na TVZ</h2>
+            <p>Najnovije vijesti i informacije o našim programima i događanjima.</p>
+        </section>
+
+        <section class="subscribe">
+            <h2>Pretplata na novosti</h2>
+            <form action="subscribe.php" method="post">
+                <label for="email">Email adresa:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Pretplati se</button>
+            </form>
+        </section>
+
+        <section class="articles">
+            <h2>Najaktualniji članci</h2>
+            <?php include 'popular_articles.php'; ?>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tehničko veleučilište u Zagrebu. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>

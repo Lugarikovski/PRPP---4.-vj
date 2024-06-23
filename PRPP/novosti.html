@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novosti - Tehničko veleučilište u Zagrebu</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Tehničko veleučilište u Zagrebu</h1>
+        <nav>
+            <ul>
+                <li><a href="PRPP.html">Početna</a></li>
+                <li><a href="novosti.html">Novosti</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="news">
+            <h2>Novosti</h2>
+            <?php include 'fetch_news.php'; ?>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tehničko veleučilište u Zagrebu. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>
